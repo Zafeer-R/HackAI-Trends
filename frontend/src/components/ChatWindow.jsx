@@ -50,8 +50,8 @@ const ChatWindow = () => {
   };
 
   return (
-    <div className="p-4 max-w-2xl mx-auto">
-      <div className="border rounded p-4 h-96 overflow-y-scroll bg-white shadow">
+    <div className="p-4 w-full mx-5">
+      <div className="rounded p-4 h-96 w-full overflow-y-scroll bg-white shadow">
         {history.map((msg, i) => (
           <div
             key={i}
@@ -71,15 +71,15 @@ const ChatWindow = () => {
           </div>
         ))}
       </div>
-      <div className="flex mt-4">
+      <div className="flex h-1/4 m-auto">
         <input
-          className="flex-grow border rounded-l p-2"
+          class="w-3/4 h-1/2 m-auto border rounded-l p-2"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask something..."
         />
         <button
-          className="bg-blue-500 text-white px-4 rounded-r"
+          className="h-1/2 right-4 m-auto bg-blue-500 text-white px-4 rounded-r"
           onClick={sendMessage}
         >
           Send
