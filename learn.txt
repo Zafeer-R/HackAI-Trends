@@ -1,0 +1,11 @@
+backend/
+├── controllers/
+│   └── chatbotController.js
+├── services/
+│   ├── geminiService.js
+│   └── dbService.js
+├── routes/
+│   └── chatbotRoutes.js
+├── app.js
+├── .env
+└── package.json
