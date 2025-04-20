@@ -59,7 +59,7 @@ const ChatWindow = () => {
           >
             <p
               className={`p-2 inline-block rounded ${
-                msg.role === "user" ? "bg-blue-100" : "bg-gray-200"
+                msg.role === "user" ? "bg-blue-500" : "bg-gray-800"
               }`}
             >
               <span
